@@ -16,13 +16,13 @@ public class BacklogController: ControllerBase
         this.backlogLogic = backlogLogic;
     }
     
-     [HttpPost]
+    [HttpPost]
     public async Task<ActionResult<Backlog>> CreateAsync([FromBody]BacklogCreationDto dto)
     {
         try
         {
-            Backlog created = await backlogLogic.CreateAsync(dto);
-            return Created($"/backlog/{created.name}", created);
+            BacklogCreationDto backlog = await backlogLogic.CreateAsync(dto);
+            return Created($"/backlog/{backlog.Title}", backlog);
         }
         catch (Exception e)
         {

@@ -88,4 +88,12 @@ public class DataContext
         return Task.FromResult(dto);
 
     }
+
+    public async Task createBacklog(BacklogCreationDto dto)
+    {
+        client.createBacklog(new NewBacklogRequest()
+        {
+            BacklogName = dto.Title, UserId = dto.UserId
+        });
+    }
 }

@@ -2,10 +2,10 @@
 
 public class UserStory
 {
-    private int UserStoryId { get; set; }
-    private int UserId { get; set; }
-    private string Title { get; set; }
-    private string Description { get; set; }
+    public int UserStoryId { get; set; }
+    public int UserId { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
 
     public UserStory(int userStoryId, int userId, string title, string description)
     {
@@ -14,13 +14,7 @@ public class UserStory
         Title = title;
         Description = description;
     }
-
-    public UserStory(int userId, string title, string description)
-    {
-        UserId = userId;
-        Title = title;
-        Description = description;
-    }
+    
 
     public override string ToString()
     {

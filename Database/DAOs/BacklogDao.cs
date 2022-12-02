@@ -8,11 +8,20 @@ public class BacklogDao : IBacklogDao
 {
 
     private readonly DataContainer container;
-    public Task<Backlog> CreateAsync(Backlog backlog)
+    private DataContext context;
+
+    public BacklogDao(DataContainer container, DataContext context)
     {
-        container.Backlogs.Add(backlog);
-        return Task.FromResult(backlog);
+        this.container = container;
+        this.context = context;
     }
+
+    public async Task<BacklogCreationDto> CreateAsync(BacklogCreationDto dto)
+    {
+        await context.createBacklog(dto);
+        return await Task.FromResult(dto);
+    }
+
 
     public Task<IEnumerable<Backlog>> GetAsync(SearchBacklogParametersDto searchParameters)
     {

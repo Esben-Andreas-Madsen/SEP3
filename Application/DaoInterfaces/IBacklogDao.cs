@@ -5,7 +5,7 @@ namespace Application.DaoInterfaces;
 
 public interface IBacklogDao
 {
-    Task<Backlog> CreateAsync(Backlog backlog);
+    Task<BacklogCreationDto> CreateAsync(BacklogCreationDto dto);
      Task<IEnumerable<Backlog>> GetAsync(SearchBacklogParametersDto searchParameters);
     Task UpdateAsync(Backlog backlog);
     Task<Backlog?> GetByNameAsync(string backlogName);

@@ -16,23 +16,11 @@ public class BacklogLogic: IBacklogLogic
         this.userDao = userDao;
     }
     
-    public async Task<Backlog> CreateAsync(BacklogCreationDto dto)
+    public Task<BacklogCreationDto> CreateAsync(BacklogCreationDto dto)
     {
-       
-            User? user = await userDao.GetByUsernameAsync(dto.user.UserName);
-            if (user?.UserName == null)
-            {
-                throw new Exception($"User with name {dto.user.UserName} was not found.");
-            }
-
-            Backlog backlog = new Backlog(dto.backlogName, dto.user);
-
-            ValidateBacklog(backlog);
-
-            Backlog? createdBacklog = await backlogDao.CreateAsync(backlog);
-            return createdBacklog;
-
+        return backlogDao.CreateAsync(dto);
     }
+    
 
     public Task<IEnumerable<Backlog>> GetAsync(SearchBacklogParametersDto searchParameters)
     {

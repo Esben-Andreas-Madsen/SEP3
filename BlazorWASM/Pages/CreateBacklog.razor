@@ -77,7 +77,6 @@
     private async Task Create()
     {
         
-        // selectedID som skal findes i en Users-lsite. Dette ID's user skal bruges ifbm. dto'en
 
         foreach (User user in users)
         {
@@ -100,7 +99,7 @@
 
         try
         {
-            BacklogCreationDto dto = new(backlogName, selectedUser);
+            BacklogCreationDto dto = new BacklogCreationDto(selectedId, backlogName);
             await backlobService.CreateAsync(dto);
             showModal = true;
         }

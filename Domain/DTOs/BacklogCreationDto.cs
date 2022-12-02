@@ -4,13 +4,18 @@ namespace Domain.DTOs;
 
 public class BacklogCreationDto
 {
-    public string backlogName { get; }
-    public User user { get; }
+    public int UserId { get; set; }
+    public string Title { get; set; }
 
 
-    public BacklogCreationDto(string backlogName, User user)
+    public BacklogCreationDto(int userId, string title)
     {
-        this.backlogName = backlogName;
-        this.user = user;
+        UserId = userId;
+        Title = title;
+    }
+
+    public override string ToString()
+    {
+        return $"{nameof(UserId)}: {UserId}, {nameof(Title)}: {Title}";
     }
 }
