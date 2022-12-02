@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/ScrumService.cs \
+obj\Debug\net6.0\Protos/ScrumServiceGrpc.cs: Protos/ScrumService.proto
