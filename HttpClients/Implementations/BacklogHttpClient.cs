@@ -26,18 +26,17 @@ public class BacklogHttpClient : IBackLogService
         }
     }
 
-    public async Task<ICollection<Backlog>> GetAsync(User? productOwner, bool? isCompleted, string? titleContains)
+    public async Task<IEnumerable<Backlog>?> GetAsync()
     {
-        string query = ConstructQuery(productOwner, isCompleted, titleContains);
-
-        HttpResponseMessage response = await client.GetAsync("/backlog" + query);
+        string uri = "/backlog";
+        HttpResponseMessage response = await client.GetAsync(uri);
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(content);
         }
 
-        ICollection<Backlog> backlogs = JsonSerializer.Deserialize<ICollection<Backlog>>(content, new JsonSerializerOptions
+        IEnumerable<Backlog>? backlogs = JsonSerializer.Deserialize<IEnumerable<Backlog>>(content, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;

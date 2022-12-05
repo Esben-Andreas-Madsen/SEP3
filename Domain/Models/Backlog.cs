@@ -4,12 +4,12 @@ public class Backlog
 {
    public string? name { get; set; }
   
-   public User? ProductOwner { get; private set; }
+   public int? UserId { get; private set; }
    public bool IsCompleted { get; set; }
 
-   public Backlog(string? name, User? productOwner)
+   public Backlog(string? name, int? userId)
    {
       this.name = name;
-      ProductOwner = productOwner;
+      UserId = userId;
    }
 }

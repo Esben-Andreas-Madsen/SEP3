@@ -7,7 +7,7 @@ public class BacklogUpdateDto
     
     //todo få sty rpå id/name
     public int Id { get; }
-    public User? ProductOwner { get; set; }
+    public int? userID { get; set; }
     public string? Name { get; set; }
     public bool? IsCompleted { get; set; }
 

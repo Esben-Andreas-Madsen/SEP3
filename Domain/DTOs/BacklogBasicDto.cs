@@ -6,13 +6,13 @@ public class BacklogBasicDto
 {
     public string? name { get; set; }
    
-    public User? ProductOwner { get;  set; }
+    public int? userId { get;  set; }
     public bool IsCompleted { get; set; }
 
-    public BacklogBasicDto(string? name, User? productOwner, bool isCompleted)
+    public BacklogBasicDto(string? name, int? userId, bool isCompleted)
     {
         this.name = name;
-        ProductOwner = productOwner;
+        this.userId = userId;
         IsCompleted = isCompleted;
     }
 }

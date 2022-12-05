@@ -23,9 +23,11 @@ public class BacklogDao : IBacklogDao
     }
 
 
-    public Task<IEnumerable<Backlog>> GetAsync(SearchBacklogParametersDto searchParameters)
+    public async Task<IEnumerable<Backlog>> GetAsync()
     {
-        throw new NotImplementedException();
+        await context.getAllBacklogs();
+        IEnumerable<Backlog> backlogs = context.container.Backlogs;
+        return await Task.FromResult(backlogs);
     }
 
     public Task UpdateAsync(Backlog backlog)

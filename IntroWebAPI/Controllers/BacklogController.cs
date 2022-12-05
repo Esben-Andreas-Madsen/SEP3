@@ -32,13 +32,12 @@ public class BacklogController: ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Backlog>>> GetAsync([FromQuery] string? userName, 
-        [FromQuery] bool? completedStatus, [FromQuery] string? titleContains)
+    public async Task<ActionResult<IEnumerable<Backlog>>> GetAsync()
     {
         try
         {
-            SearchBacklogParametersDto parameters = new(userName, completedStatus, titleContains);
-            var todos = await backlogLogic.GetAsync(parameters);
+           // SearchBacklogParametersDto parameters = new(userName, completedStatus, titleContains);
+            var todos = await backlogLogic.GetAsync();
             return Ok(todos);
         }
         catch (Exception e)

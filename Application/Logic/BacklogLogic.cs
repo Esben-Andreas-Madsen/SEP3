@@ -22,9 +22,9 @@ public class BacklogLogic: IBacklogLogic
     }
     
 
-    public Task<IEnumerable<Backlog>> GetAsync(SearchBacklogParametersDto searchParameters)
+    public Task<IEnumerable<Backlog>> GetAsync()
     {
-        return backlogDao.GetAsync(searchParameters);
+        return backlogDao.GetAsync();
     }
 
     public async Task UpdateAsync(BacklogUpdateDto dto)
@@ -51,7 +51,7 @@ public class BacklogLogic: IBacklogLogic
             throw new Exception("Cannot un-complete a completed Todo");
         }
 
-        var userToUse = user ?? existing.ProductOwner;
+        var userToUse = dto.userID ?? existing.UserId;
         var titleToUse = dto.Name ?? existing.name;
         var completedToUse = dto.IsCompleted ?? existing.IsCompleted;
         
@@ -90,7 +90,7 @@ public class BacklogLogic: IBacklogLogic
             throw new Exception($"Todo with name {backlogName} not found");
         }
 
-        return new BacklogBasicDto(backlog.name, backlog.ProductOwner, backlog.IsCompleted);
+        return new BacklogBasicDto(backlog.name, backlog.UserId, backlog.IsCompleted);
     }
 
     

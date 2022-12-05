@@ -17,7 +17,7 @@ public class Formatter : FormatterInterface
 
     public Backlog responseToBacklog(BacklogResponse response)
     {
-        throw new NotImplementedException();
+        return new Backlog(response.BacklogName, response.UserId);
     }
 
     /*public Backlog responseToBacklog(BacklogResponse response)
