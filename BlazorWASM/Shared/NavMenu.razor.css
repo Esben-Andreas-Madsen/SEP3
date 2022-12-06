@@ -1,10 +1,10 @@
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(157, 0, 255);
 }
 
 .top-row {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(106, 0, 252);
 }
 
 .navbar-brand {
@@ -41,13 +41,13 @@
     }
 
 .nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
+    background-color: #8000ff;
+    color: rgb(9, 1, 1);
 }
 
 .nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgb(132, 0, 255);
+    color: #000000;
 }
 
 @media (min-width: 641px) {
@@ -58,5 +58,7 @@
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
+
     }
+ 
 }
