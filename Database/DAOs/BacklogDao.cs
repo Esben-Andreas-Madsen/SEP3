@@ -18,14 +18,14 @@ public class BacklogDao : IBacklogDao
 
     public async Task<BacklogCreationDto> CreateAsync(BacklogCreationDto dto)
     {
-        await context.createBacklog(dto);
+        await context.CreateBacklog(dto);
         return await Task.FromResult(dto);
     }
 
 
     public async Task<IEnumerable<Backlog>> GetAsync()
     {
-        await context.getAllBacklogs();
+        await context.GetAllBacklogs();
         IEnumerable<Backlog> backlogs = context.container.Backlogs;
         return await Task.FromResult(backlogs);
     }

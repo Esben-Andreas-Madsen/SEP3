@@ -25,7 +25,7 @@ public class DataContext
         formatter = new Formatter();
     }
 
-    public async Task getAllBacklogs()
+    public async Task GetAllBacklogs()
     {
         AsyncServerStreamingCall<BacklogResponse> streamingCall = client.getAllBacklogs(new AllBacklogsRequest());
         try
@@ -43,7 +43,7 @@ public class DataContext
         await Task.FromResult(streamingCall);
     }
     
-    public async Task getAllUsers()
+    public async Task GetAllUsers()
     {
         AsyncServerStreamingCall<UserResponse> streamingCall = client.getAllUsers(new AllUsersRequest());
         try
@@ -61,7 +61,7 @@ public class DataContext
         await Task.FromResult(streamingCall);
     }
     
-    public async Task getAllUserStories()
+    public async Task GetAllUserStories()
     {
         AsyncServerStreamingCall<UserStoryResponse> streamingCall = client.getAllUserStories(new AllUserStoriesRequest());
         try
@@ -79,7 +79,7 @@ public class DataContext
         await Task.FromResult(streamingCall);
     }
 
-    public Task createUser(UserCreationDto dto)
+    public Task CreateUser(UserCreationDto dto)
     {
         client.createUser(new NewUserRequest()
         {
@@ -89,11 +89,21 @@ public class DataContext
 
     }
 
-    public async Task createBacklog(BacklogCreationDto dto)
+    public async Task CreateBacklog(BacklogCreationDto dto)
     {
         client.createBacklog(new NewBacklogRequest()
         {
             BacklogName = dto.Title, UserId = dto.UserId
         });
+        await Task.FromResult(dto);
+    }
+
+    public async Task CreateUserStory(UserStoryCreationDto dto)
+    {
+        client.createUserStory(new NewUserStoryRequest()
+        {
+            UserId = dto.UserId, Title = dto.Title, Description = dto.Description
+        });
+        await Task.FromResult(dto);
     }
 }

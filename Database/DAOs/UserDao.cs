@@ -18,13 +18,13 @@ public class UserDao : IUserDao
 
     public async Task<UserCreationDto> CreateAsync(UserCreationDto dto)
     {
-        await context.createUser(dto);
+        await context.CreateUser(dto);
         return await Task.FromResult(dto);
     }
     
     public async Task<IEnumerable<User>> GetAsync()
     {
-        await context.getAllUsers();
+        await context.GetAllUsers();
         IEnumerable<User> users = context.container.Users;
         return await Task.FromResult(users);
     }
@@ -36,19 +36,5 @@ public class UserDao : IUserDao
             u.UserName != null && u.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)
         );
         return Task.FromResult(existing);
-    }
-
-    
-
-    public Task<User?> GetByIdAsync(int dtoOwnerId)
-    {
-        if (container.Users != null)
-        {
-            User? existing = container.Users.FirstOrDefault(u =>
-                u.UserId == dtoOwnerId
-            );
-            return Task.FromResult(existing);
-        }
-        return null;
     }
 }

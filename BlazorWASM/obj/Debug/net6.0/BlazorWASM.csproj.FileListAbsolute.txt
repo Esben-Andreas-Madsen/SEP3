@@ -2567,3 +2567,4 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\ref\BlazorWASM.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\scopedcss\Pages\index.razor.rz.scp.css
