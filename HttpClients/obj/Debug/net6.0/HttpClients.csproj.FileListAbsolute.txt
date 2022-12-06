@@ -30,7 +30,6 @@ C:\Users\ander\Documents\GitHub\SEP3\HttpClients\obj\Debug\net6.0\ref\HttpClient
 C:\Users\ander\Documents\GitHub\SEP3\HttpClients\obj\Debug\net6.0\HttpClients.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\HttpClients.deps.json
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\HttpClients.dll
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\ref\HttpClients.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\HttpClients.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\obj\Debug\net6.0\HttpClients.csproj.AssemblyReference.cache
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\obj\Debug\net6.0\HttpClients.GeneratedMSBuildEditorConfig.editorconfig
@@ -43,3 +42,4 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\obj\Debug\ne
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\obj\Debug\net6.0\HttpClients.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\Shared.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\bin\Debug\net6.0\Shared.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\HttpClients\obj\Debug\net6.0\refint\HttpClients.dll

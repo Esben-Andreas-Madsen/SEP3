@@ -1,6 +1,5 @@
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Database.deps.json
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Database.dll
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\ref\Database.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Database.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Application.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Application.pdb
@@ -15,3 +14,4 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\obj\Debug\net6.
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\obj\Debug\net6.0\Database.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Shared.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\bin\Debug\net6.0\Shared.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Database\obj\Debug\net6.0\refint\Database.dll
