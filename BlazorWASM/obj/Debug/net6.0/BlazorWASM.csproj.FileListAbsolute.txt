@@ -1703,8 +1703,6 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\BlazorWASM.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\BlazorWASM.pdb
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Domain.dll
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Domain.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.1.a5cjukhbgm.js
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
@@ -1932,7 +1930,6 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Linq.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.PdfExport.Net.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Drawing.dll.gz
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Domain.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.EventBasedAsync.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebHeaderCollection.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Cng.dll.gz
@@ -2068,7 +2065,6 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.dll.gz
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Domain.pdb.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Primitives.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Thread.dll.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.dll.gz
@@ -2330,10 +2326,8 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\icudt_CJK.dat
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\icudt_EFIGS.dat
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\icudt_no_CJK.dat
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\Domain.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\HttpClients.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\HttpClients.pdb
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\Domain.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.csproj.AssemblyReference.cache
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.AssemblyInfoInputs.cache
@@ -2544,10 +2538,8 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\VgLaVlsT.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\Uo2+xgyl.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\ZLTacY7G.gz
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\4CB4yxHG.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\gev1ncjw.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\+pSU5OyC.gz
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\sQ09lBf1.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\wpjzHdyp.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\RIpmkQfr.gz
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\y4WWaUZu.gz
@@ -2568,3 +2560,11 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\ref\BlazorWASM.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\BlazorWASM.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\scopedcss\Pages\index.razor.rz.scp.css
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Shared.dll
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Shared.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Shared.pdb.gz
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\wwwroot\_framework\Shared.dll.gz
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\Shared.dll
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\bin\Debug\net6.0\Shared.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\Te70Qo1+.gz
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\build-gz\1MLr3Isn.gz

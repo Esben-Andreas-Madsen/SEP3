@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WCF19garfEHHDCza1bxabiOhFwxhluTUL8rNg98GPAe+Nx1YZATiZ/SH6NSzjFjzEC2kUL8vhmYIg3PIraOPzg==",
+  "dgSpecHash": "Ycl43TrInwhtMzR6n6ul6GBMJAxifps9Thk6oWzIDiahHV1doCBzCOc2p7BrSMUyib4Xr2m5EEC5pofvk7eBlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\HttpClients\\HttpClients.csproj",
+  "projectFilePath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wille\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
     "C:\\Users\\wille\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",

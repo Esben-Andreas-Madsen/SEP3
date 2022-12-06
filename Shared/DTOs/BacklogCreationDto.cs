@@ -1,6 +1,4 @@
-﻿using Domain.Models;
-
-namespace Domain.DTOs;
+﻿namespace Shared.DTOs;
 
 public class BacklogCreationDto
 {

@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "0S47d+9ZDmle2wXy+gEUIA7U5ozo7VAtN+qVU+AS0LN5hTeuDKPk2p6Fp2mUj99fXszy58/eQNGxZObBaBmqEw==",
+  "dgSpecHash": "/BtSL+0pBm8gu7eHbOs2+KB5559n+55mF6LC9s/06YPZ96+YUs95SnPMAuPRVRqg6zXIuVJysfXbpMfwP+LqrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

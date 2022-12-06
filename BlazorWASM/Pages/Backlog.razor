@@ -1,7 +1,7 @@
 ﻿@page "/Backlog"
-@using Domain.Models
 @using HttpClients.ClientInterfaces
-@using Domain.DTOs
+@using global::Shared.Models
+@using global::Shared.DTOs
 
 @inject IBackLogService backLogService
 @inject NavigationManager navMgr
@@ -55,7 +55,7 @@ else
 }
 
 @code {
-    private IEnumerable<Domain.Models.Backlog>? backlogs;
+    private IEnumerable<global::Shared.Models.Backlog>? backlogs;
     private string msg = "";
     private bool doShowFilters = false;
     private string userNameFilter;
@@ -78,7 +78,7 @@ else
         }
     }
 
-    private async Task<Task<IEnumerable<Domain.Models.Backlog>?>> LoadBacklogs()
+    private async Task<Task<IEnumerable<global::Shared.Models.Backlog>?>> LoadBacklogs()
     {
 
         backlogs = await backLogService.GetAsync();

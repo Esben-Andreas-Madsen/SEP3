@@ -119,19 +119,6 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
-        }
       }
     }
   },
@@ -353,16 +340,11 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Shared >= 1.0.0"
+      "Microsoft.AspNetCore.Authorization >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -371,11 +353,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\HttpClients\\HttpClients.csproj",
-      "projectName": "HttpClients",
-      "projectPath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\HttpClients\\HttpClients.csproj",
+      "projectUniqueName": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\Shared.csproj",
+      "projectName": "Shared",
+      "projectPath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\wille\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\HttpClients\\obj\\",
+      "outputPath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wille\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -389,11 +371,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\wille\\Downloads\\SEP3backupførstedecember\\SEP3\\Shared\\Shared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -405,6 +383,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

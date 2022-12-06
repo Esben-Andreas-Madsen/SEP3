@@ -32,8 +32,6 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\ne
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Application.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\ref\Application.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Application.pdb
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Domain.dll
-C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Domain.pdb
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
@@ -43,3 +41,5 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\ne
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\Application.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\ref\Application.dll
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Shared.dll
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\Application\bin\Debug\net6.0\Shared.pdb

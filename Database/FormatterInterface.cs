@@ -1,5 +1,5 @@
-﻿using Domain.Models;
-using LoadDatabase;
+﻿using LoadDatabase;
+using Shared.Models;
 
 namespace Database;
 

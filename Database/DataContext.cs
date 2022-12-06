@@ -1,7 +1,7 @@
-﻿using Domain.DTOs;
-using Grpc.Core;
+﻿using Grpc.Core;
 using Grpc.Net.Client;
 using LoadDatabase;
+using Shared.DTOs;
 
 namespace Database;
 

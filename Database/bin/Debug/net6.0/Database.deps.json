@@ -9,10 +9,10 @@
       "Database/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
-          "Domain": "1.0.0",
           "Google.Protobuf": "3.21.10",
           "Grpc.Net.Client": "2.50.0",
-          "Grpc.Tools": "2.50.0"
+          "Grpc.Tools": "2.50.0",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Database.dll": {}
@@ -72,15 +72,15 @@
       "System.Memory/4.5.3": {},
       "Application/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Application.dll": {}
         }
       },
-      "Domain/1.0.0": {
+      "Shared/1.0.0": {
         "runtime": {
-          "Domain.dll": {}
+          "Shared.dll": {}
         }
       }
     }
@@ -145,7 +145,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Domain/1.0.0": {
+    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
