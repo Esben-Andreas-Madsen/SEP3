@@ -7,35 +7,19 @@
     <div class="form-group field">
         <label>User name:</label>
         <input type="text" @bind="userName" @bind:event="oninput"/>
+        <label>First Name:</label>
+        <input type="text" @bind="firstName" @bind:event="oninput"/>
+        <label>Last Name:</label>
+        <input type="text" @bind="lastName" @bind:event="oninput"/>
+        <label>Role:</label>
+        <input type="text" @bind="role" @bind:event="oninput"/>
+        <label>Password:</label>
+        <input type="text" @bind="password" @bind:event="oninput"/>
         @if (!string.IsNullOrEmpty(resultMsg))
         {
             <label style="color: @color">@resultMsg</label>
         }
-        <label>First Name:</label>
-                <input type="text" @bind="firstName" @bind:event="oninput"/>
-                @if (!string.IsNullOrEmpty(resultMsg))
-                {
-                    <label style="color: @color">@resultMsg</label>
-                }
-        <label>Last Name:</label>
-                        <input type="text" @bind="lastName" @bind:event="oninput"/>
-                        @if (!string.IsNullOrEmpty(resultMsg))
-                        {
-                            <label style="color: @color">@resultMsg</label>
-                        }
-        <label>Role:</label>
-                        <input type="text" @bind="role" @bind:event="oninput"/>
-                        @if (!string.IsNullOrEmpty(resultMsg))
-                        {
-                            <label style="color: @color">@resultMsg</label>
-                        }
-        <label>Password:</label>
-                        <input type="text" @bind="password" @bind:event="oninput"/>
-                        @if (!string.IsNullOrEmpty(resultMsg))
-                        {
-                            <label style="color: @color">@resultMsg</label>
-                        }
-        
+
     </div>
     <div class="button-row">
         <button @onclick="Create" disabled="@(string.IsNullOrEmpty(userName))" class="acceptbtn">Create</button>
@@ -48,26 +32,31 @@
     private string? lastName = "";
     private string? role = "";
     private string? password = "";
-    
+
     private string resultMsg = "";
     private string color = "";
-    
+
     private async Task Create()
     {
-         resultMsg = "";
+        resultMsg = "";
 
-         try
-         {
-             await userService.Create(new UserCreationDto(userName, password, role, firstName, lastName));
-             userName = "";
-             resultMsg = "User successfully created";
-             color = "green";
-         }
-         catch (Exception e)
-         {
-             Console.WriteLine(e);
-             resultMsg = e.Message;
-             color = "red";
-         }
+        try
+        {
+            await userService.Create(new UserCreationDto(userName, password, role, firstName, lastName));
+            userName = "";
+            firstName = "";
+            lastName = "";
+            role = "";
+            password = "";
+            resultMsg = "User successfully created";
+            color = "green";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+            color = "red";
+        }
     }
+
 }

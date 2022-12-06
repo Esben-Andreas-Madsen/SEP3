@@ -1,4 +1,5 @@
-﻿using Application.DaoInterfaces;
+﻿using System.Security.AccessControl;
+using Application.DaoInterfaces;
 using Domain.DTOs;
 using Domain.Models;
 
@@ -30,11 +31,18 @@ public class UserDao : IUserDao
     }
     
     
-    public Task<User?> GetByUsernameAsync(string? userName)
+    public async Task<User?> GetByUsernameAsync(string? userName)
     {
-        User? existing = container.Users!.FirstOrDefault(u =>
-            u.UserName != null && u.UserName.Equals(userName, StringComparison.OrdinalIgnoreCase)
-        );
-        return Task.FromResult(existing);
+        await context.GetAllUsers();
+        User? existing = null;
+        foreach (User user in context.container.Users)
+        {
+            if (user.UserName.ToLower().Equals(userName.ToLower()))
+            {
+                existing = user;
+            }
+        }
+
+        return await Task.FromResult(existing);
     }
 }
