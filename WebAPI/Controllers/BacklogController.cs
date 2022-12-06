@@ -6,7 +6,6 @@ using Shared.Models;
 
 namespace WebAPI.Controllers;
 
-[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class BacklogController: ControllerBase

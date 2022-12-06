@@ -2,15 +2,14 @@
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
 @using global::Shared.DTOs
+@attribute [Authorize]
 
 @inject IBackLogService backLogService
 @inject NavigationManager navMgr
 
 <h3>Backlogs</h3>
 
-<div>
-    <button @onclick="LoadBacklogs">Load backlogs</button>
-</div>
+
 
 @if (!backlogs.Any())
 {

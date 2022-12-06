@@ -1,4 +1,5 @@
 @page "/ViewUsers"
+@attribute [Authorize]
 @using HttpClients.ClientInterfaces
 @using global::Shared.Models
 @inject IUserService userService
