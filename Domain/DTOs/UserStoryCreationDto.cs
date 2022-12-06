@@ -1,0 +1,19 @@
+﻿namespace Domain.DTOs;
+
+public class UserStoryCreationDto
+{
+    // public int UserId { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+
+    public UserStoryCreationDto(string title, string description)
+    {
+        Title = title;
+        Description = description;
+    }
+    
+    public override string ToString()
+    {
+        return $"{nameof(Title)}: {Title}, {nameof(Description)}: {Description}";
+    }
+}

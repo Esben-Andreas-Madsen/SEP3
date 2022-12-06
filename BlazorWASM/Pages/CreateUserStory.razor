@@ -1,4 +1,7 @@
 ﻿@page "/CreateUserStory"
+@using Domain.DTOs
+@using HttpClients.ClientInterfaces
+@inject IUserStoryService userStoryService
 <div class="card">
     <h3>Create User Story</h3>
     <div class="form-group field">
@@ -20,7 +23,7 @@
         
     </div>
     <div class="button-row">
-        <button @onclick="Create" disabled="@(string.IsNullOrEmpty(userName))" class="acceptbtn">Create</button>
+        <button @onclick="Create" disabled="@(string.IsNullOrEmpty(title))" class="acceptbtn">Create</button>
     </div>
 </div>
 
@@ -32,6 +35,25 @@
     
     private string resultMsg = "";
     private string color = "";
+    
+    private async Task Create()
+    {
+        resultMsg = "";
+
+        try
+        {
+            await userStoryService.Create(new UserStoryCreationDto(title, description));
+            title = "";
+            resultMsg = "User story successfully created";
+            color = "green";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            resultMsg = e.Message;
+            color = "red";
+        }
+    }
     
     
 }
