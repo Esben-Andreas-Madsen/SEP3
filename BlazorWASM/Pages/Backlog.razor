@@ -10,8 +10,12 @@
 <h3>Backlogs</h3>
 
 
+@if(backlogs == null)
+{
+    <span>Loading backlogs</span>
+}
 
-@if (!backlogs.Any())
+else if(!backlogs.Any())
 {
     <p>No Backlogs to display</p>
 }
