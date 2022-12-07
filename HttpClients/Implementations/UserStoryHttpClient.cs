@@ -31,8 +31,20 @@ public class UserStoryHttpClient : IUserStoryService
         return userStory;
     }
 
-    public Task<IEnumerable<UserStory>> GetUsers()
+    public async Task<IEnumerable<UserStory>> GetUserStories()
     {
-        throw new NotImplementedException();
+        string uri = "/userstory";
+        HttpResponseMessage response = await client.GetAsync(uri);
+        string result = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+
+        IEnumerable<UserStory> userStories = JsonSerializer.Deserialize<IEnumerable<UserStory>>(result, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return userStories;
     }
 }

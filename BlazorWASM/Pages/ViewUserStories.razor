@@ -1,0 +1,55 @@
+﻿@page "/ViewUserStories"
+@using global::Shared.Models
+@using HttpClients.ClientInterfaces
+@inject IUserStoryService userStoryService;
+@attribute [Authorize]
+
+<h3 style="text-align: center">Overview of all UserStories</h3>
+
+@if (!userStories.Any())
+{
+    <p>No UserStories to display</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (UserStory userStory in userStories)
+        {
+            <tr>
+                <td>@userStory.UserStoryId</td>
+                <td>@userStory.Title?</td>
+                <td>@userStory.Description</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<UserStory>? userStories;
+    private string msg = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            userStories = await userStoryService.GetUserStories();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+}

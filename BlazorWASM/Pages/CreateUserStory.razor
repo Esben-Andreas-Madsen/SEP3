@@ -20,8 +20,6 @@
         {
             <label style="color: @color">@resultMsg</label>
         }
-
-
     </div>
     <div class="button-row">
         <button @onclick="Create" disabled="@(string.IsNullOrEmpty(title))" class="acceptbtn">Create</button>
@@ -69,6 +67,4 @@
 
         UserId = user.FindFirst("UserId");
     }
-
-
 }
