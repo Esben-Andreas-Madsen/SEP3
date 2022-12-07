@@ -10,32 +10,21 @@
 @attribute [Authorize("MustBeScrumMaster")]
 
 <div class="card">
-    @if (users == null)
-    {
-        <label>Loading users...</label>
-    }
-    else if (!users.Any())
-    {
-        <label>No users, you cannot create a Todo</label>
-    }
-    else
-    {
-        <h3>Create Backlog</h3>
-        <div class="form-group field">
-            <label>Title:</label>
-            <input type="text" @bind="backlogName"/>
-        </div>
-        
-        
-        
-        <div class="button-row">
-            @if (!string.IsNullOrEmpty(msg))
-            {
-                <label style="color: red">@msg</label>
-            }
-            <button @onclick="Create" class="acceptbtn">Create</button>
-        </div>
-    }
+
+    <h3>Create Backlog</h3>
+    <div class="form-group field">
+        <label>Title:</label>
+        <input type="text" @bind="backlogName"/>
+    </div>
+
+
+    <div class="button-row">
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <label style="color: red">@msg</label>
+        }
+        <button @onclick="Create" class="acceptbtn">Create</button>
+    </div>
 </div>
 
 <Modal ShowModal="showModal">
@@ -44,13 +33,12 @@
 </Modal>
 
 @code {
-    private IEnumerable<User>? users;
     private int selectedId;
     private User? selectedUser;
     private string backlogName = "";
     private string msg = "";
     private bool showModal;
-    
+
     [CascadingParameter]
     public Task<AuthenticationState> AuthState { get; set; } = null!;
 
@@ -58,23 +46,13 @@
 
     protected override async Task OnInitializedAsync()
     {
-        msg = "";
-        try
-        {
-            users = (ICollection<User>?)await userService.GetUsers();
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            msg = e.Message;
-        }
-        
+
         AuthenticationState authState = await AuthState;
         ClaimsPrincipal user = authState.User;
 
         UserId = user.FindFirst("UserId");
     }
-    
+
     private async Task Create()
     {
         try
@@ -95,4 +73,5 @@
         showModal = false;
         navMgr.NavigateTo("/Backlog");
     }
+
 }
