@@ -2579,3 +2579,4 @@ C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BlazorWASM.props
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\scopedcss\Pages\CreateBacklog.razor.rz.scp.css
+C:\Users\wille\Downloads\SEP3backupførstedecember\SEP3\BlazorWASM\obj\Debug\net6.0\scopedcss\Pages\CreateUserStory.razor.rz.scp.css

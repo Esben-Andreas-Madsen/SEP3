@@ -16,6 +16,8 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddScoped<IUserService, UserHttpClient>();
 builder.Services.AddScoped<IBackLogService, BacklogHttpClient>();
+builder.Services.AddScoped<IUserStoryService, UserStoryHttpClient>();
+
 
 
 builder.Services.AddScoped<IAuthService, JwtAuthService>();

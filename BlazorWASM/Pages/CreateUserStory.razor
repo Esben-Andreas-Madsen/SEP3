@@ -3,6 +3,7 @@
 @using HttpClients.ClientInterfaces
 @using System.Security.Claims
 @inject IUserStoryService userStoryService
+@attribute [Authorize]
 <div class="card">
     <h3>Create User Story</h3>
     <div class="form-group field">
