@@ -3,7 +3,9 @@
         <Found Context="routeData">
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
                 <NotAuthorized>
-                    <p>You'll have to log in!</p>
+                    <p>Something isn't right. Here a list of things that could be wrong:</p>
+                    <p> -   Are you logged in?</p>
+                    <p> -   Do you have the rights to access the page?</p>
                 </NotAuthorized>
             </AuthorizeRouteView>
             <FocusOnNavigate RouteData="@routeData" Selector="h1"/>

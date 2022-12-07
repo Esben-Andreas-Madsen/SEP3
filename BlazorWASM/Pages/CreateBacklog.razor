@@ -54,7 +54,6 @@
     [CascadingParameter]
     public Task<AuthenticationState> AuthState { get; set; } = null!;
 
-    private IEnumerable<Claim>? userClaims;
     private Claim? UserId;
 
     protected override async Task OnInitializedAsync()
@@ -72,8 +71,7 @@
         
         AuthenticationState authState = await AuthState;
         ClaimsPrincipal user = authState.User;
-        
-        userClaims = user.Claims;
+
         UserId = user.FindFirst("UserId");
     }
     
@@ -97,5 +95,4 @@
         showModal = false;
         navMgr.NavigateTo("/Backlog");
     }
-
 }
