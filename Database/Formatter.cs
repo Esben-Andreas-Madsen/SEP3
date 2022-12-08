@@ -17,7 +17,7 @@ public class Formatter : FormatterInterface
 
     public Backlog responseToBacklog(BacklogResponse response)
     {
-        return new Backlog(response.BacklogName, response.UserId);
+        return new Backlog(response.BacklogName, response.UserStoryId, response.UserId);
     }
 
     /*public Backlog responseToBacklog(BacklogResponse response)

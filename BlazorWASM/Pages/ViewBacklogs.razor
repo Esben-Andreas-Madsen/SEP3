@@ -1,0 +1,90 @@
+﻿@page "/ViewBacklog"
+@using HttpClients.ClientInterfaces
+@using global::Shared.Models
+@attribute [Authorize]
+
+@inject IBackLogService backLogService
+@inject IUserStoryService userStoryService
+
+<h3>Backlogs</h3>
+
+
+@if (backlogs == null)
+{
+    <span>Loading backlogs</span>
+}
+
+else if (!backlogs.Any())
+{
+    <p>No Backlogs to display</p>
+}
+else
+{
+    @foreach (Backlog backlog in uniqueBacklogs)
+    {
+        <div style="margin: 20px">
+            <h3>@backlog.BacklogName</h3>
+            <table class="table">
+                <thead>
+                <th>UserStoryId</th>
+                <th>UserId</th>
+                <th>Title</th>
+                <th>Description</th>
+                </thead>
+                <tbody>
+                @foreach (UserStory userStory in userStories)
+                {
+                    if (userStory.UserStoryId.Equals(backlog.UserStoryId))
+                    {
+                        <td>@userStory.UserStoryId</td>
+                        <td>@userStory.UserId</td>
+                        <td>@userStory.Title</td>
+                        <td>@userStory.Description</td>
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    }
+}
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
+
+@code {
+    private IEnumerable<Backlog>? backlogs;
+    private IEnumerable<UserStory>? userStories;
+    private List<Backlog>? uniqueBacklogs = new();
+
+    private string msg = "";
+    private User? user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            backlogs = await backLogService.GetAsync();
+            userStories = await userStoryService.GetUserStories();
+
+
+            foreach (Backlog backlog in backlogs)
+            {
+                if (!uniqueBacklogs.Contains(backlog))
+                {
+                    uniqueBacklogs.Add(backlog);
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
+}
