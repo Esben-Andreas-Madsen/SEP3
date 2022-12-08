@@ -106,4 +106,13 @@ public class DataContext
         });
         await Task.FromResult(dto);
     }
+
+    public async Task AssignUserStory(AssignUserStoryDto dto)
+    {
+        client.assignUserStory(new AssignUserStoryToBacklog()
+        {
+            BacklogName = dto.BacklogName, UserStoryId = dto.UserStoryId, UserId = dto.UserId
+        });
+        await Task.FromResult(dto);
+    }
 }

@@ -46,4 +46,20 @@ public class BacklogController: ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+
+
+    [HttpPost("AssignBacklog")]
+    public async Task<ActionResult<AssignUserStoryDto>> AssignUserStory([FromBody]AssignUserStoryDto dto)
+    {
+        try
+        {
+            AssignUserStoryDto backlog = await backlogLogic.AssignUserStory(dto);
+            return Created($"/backlog/{backlog.BacklogName}", backlog);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

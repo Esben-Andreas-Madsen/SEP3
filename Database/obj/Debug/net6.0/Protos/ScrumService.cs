@@ -41,23 +41,27 @@ namespace LoadDatabase {
             "C0JhY2tsb2dOYW1lGAEgASgJEhMKC1VzZXJTdG9yeUlkGAIgASgFEg4KBlVz",
             "ZXJJZBgDIAEoBSI4ChFOZXdCYWNrbG9nUmVxdWVzdBITCgtCYWNrbG9nTmFt",
             "ZRgBIAEoCRIOCgZVc2VySWQYAiABKAUiFAoSQWxsQmFja2xvZ3NSZXF1ZXN0",
-            "MuEFCgxTY3J1bVNlcnZpY2USQAoHZ2V0VXNlchIZLmRrLnZpYS5zY3J1bS5V",
-            "c2VyUmVxdWVzdBoaLmRrLnZpYS5zY3J1bS5Vc2VyUmVzcG9uc2USSQoKY3Jl",
-            "YXRlVXNlchIcLmRrLnZpYS5zY3J1bS5OZXdVc2VyUmVxdWVzdBodLmRrLnZp",
-            "YS5zY3J1bS5TdWNjZXNzUmVzcG9uc2USSgoLZ2V0QWxsVXNlcnMSHS5kay52",
-            "aWEuc2NydW0uQWxsVXNlcnNSZXF1ZXN0GhouZGsudmlhLnNjcnVtLlVzZXJS",
-            "ZXNwb25zZTABElMKEGdldFVzZXJTdG9yeUJ5SWQSHi5kay52aWEuc2NydW0u",
-            "VXNlclN0b3J5UmVxdWVzdBofLmRrLnZpYS5zY3J1bS5Vc2VyU3RvcnlSZXNw",
-            "b25zZRJTCg9jcmVhdGVVc2VyU3RvcnkSIS5kay52aWEuc2NydW0uTmV3VXNl",
-            "clN0b3J5UmVxdWVzdBodLmRrLnZpYS5zY3J1bS5TdWNjZXNzUmVzcG9uc2US",
-            "WwoRZ2V0QWxsVXNlclN0b3JpZXMSIy5kay52aWEuc2NydW0uQWxsVXNlclN0",
-            "b3JpZXNSZXF1ZXN0Gh8uZGsudmlhLnNjcnVtLlVzZXJTdG9yeVJlc3BvbnNl",
-            "MAESSwoKZ2V0QmFja2xvZxIcLmRrLnZpYS5zY3J1bS5CYWNrbG9nUmVxdWVz",
-            "dBodLmRrLnZpYS5zY3J1bS5CYWNrbG9nUmVzcG9uc2UwARJPCg1jcmVhdGVC",
-            "YWNrbG9nEh8uZGsudmlhLnNjcnVtLk5ld0JhY2tsb2dSZXF1ZXN0Gh0uZGsu",
-            "dmlhLnNjcnVtLlN1Y2Nlc3NSZXNwb25zZRJTCg5nZXRBbGxCYWNrbG9ncxIg",
-            "LmRrLnZpYS5zY3J1bS5BbGxCYWNrbG9nc1JlcXVlc3QaHS5kay52aWEuc2Ny",
-            "dW0uQmFja2xvZ1Jlc3BvbnNlMAFCD6oCDExvYWREYXRhYmFzZWIGcHJvdG8z"));
+            "IlQKGEFzc2lnblVzZXJTdG9yeVRvQmFja2xvZxITCgtCYWNrbG9nTmFtZRgB",
+            "IAEoCRITCgtVc2VyU3RvcnlJZBgCIAEoBRIOCgZVc2VySWQYAyABKAUyuwYK",
+            "DFNjcnVtU2VydmljZRJACgdnZXRVc2VyEhkuZGsudmlhLnNjcnVtLlVzZXJS",
+            "ZXF1ZXN0GhouZGsudmlhLnNjcnVtLlVzZXJSZXNwb25zZRJJCgpjcmVhdGVV",
+            "c2VyEhwuZGsudmlhLnNjcnVtLk5ld1VzZXJSZXF1ZXN0Gh0uZGsudmlhLnNj",
+            "cnVtLlN1Y2Nlc3NSZXNwb25zZRJKCgtnZXRBbGxVc2VycxIdLmRrLnZpYS5z",
+            "Y3J1bS5BbGxVc2Vyc1JlcXVlc3QaGi5kay52aWEuc2NydW0uVXNlclJlc3Bv",
+            "bnNlMAESUwoQZ2V0VXNlclN0b3J5QnlJZBIeLmRrLnZpYS5zY3J1bS5Vc2Vy",
+            "U3RvcnlSZXF1ZXN0Gh8uZGsudmlhLnNjcnVtLlVzZXJTdG9yeVJlc3BvbnNl",
+            "ElMKD2NyZWF0ZVVzZXJTdG9yeRIhLmRrLnZpYS5zY3J1bS5OZXdVc2VyU3Rv",
+            "cnlSZXF1ZXN0Gh0uZGsudmlhLnNjcnVtLlN1Y2Nlc3NSZXNwb25zZRJbChFn",
+            "ZXRBbGxVc2VyU3RvcmllcxIjLmRrLnZpYS5zY3J1bS5BbGxVc2VyU3Rvcmll",
+            "c1JlcXVlc3QaHy5kay52aWEuc2NydW0uVXNlclN0b3J5UmVzcG9uc2UwARJL",
+            "CgpnZXRCYWNrbG9nEhwuZGsudmlhLnNjcnVtLkJhY2tsb2dSZXF1ZXN0Gh0u",
+            "ZGsudmlhLnNjcnVtLkJhY2tsb2dSZXNwb25zZTABEk8KDWNyZWF0ZUJhY2ts",
+            "b2cSHy5kay52aWEuc2NydW0uTmV3QmFja2xvZ1JlcXVlc3QaHS5kay52aWEu",
+            "c2NydW0uU3VjY2Vzc1Jlc3BvbnNlElMKDmdldEFsbEJhY2tsb2dzEiAuZGsu",
+            "dmlhLnNjcnVtLkFsbEJhY2tsb2dzUmVxdWVzdBodLmRrLnZpYS5zY3J1bS5C",
+            "YWNrbG9nUmVzcG9uc2UwARJYCg9hc3NpZ25Vc2VyU3RvcnkSJi5kay52aWEu",
+            "c2NydW0uQXNzaWduVXNlclN0b3J5VG9CYWNrbG9nGh0uZGsudmlhLnNjcnVt",
+            "LlN1Y2Nlc3NSZXNwb25zZUIPqgIMTG9hZERhdGFiYXNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -73,7 +77,8 @@ namespace LoadDatabase {
             new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.BacklogRequest), global::LoadDatabase.BacklogRequest.Parser, new[]{ "BacklogName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.BacklogResponse), global::LoadDatabase.BacklogResponse.Parser, new[]{ "BacklogName", "UserStoryId", "UserId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.NewBacklogRequest), global::LoadDatabase.NewBacklogRequest.Parser, new[]{ "BacklogName", "UserId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.AllBacklogsRequest), global::LoadDatabase.AllBacklogsRequest.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.AllBacklogsRequest), global::LoadDatabase.AllBacklogsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LoadDatabase.AssignUserStoryToBacklog), global::LoadDatabase.AssignUserStoryToBacklog.Parser, new[]{ "BacklogName", "UserStoryId", "UserId" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3011,6 +3016,269 @@ namespace LoadDatabase {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class AssignUserStoryToBacklog : pb::IMessage<AssignUserStoryToBacklog>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AssignUserStoryToBacklog> _parser = new pb::MessageParser<AssignUserStoryToBacklog>(() => new AssignUserStoryToBacklog());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AssignUserStoryToBacklog> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::LoadDatabase.ScrumServiceReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssignUserStoryToBacklog() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssignUserStoryToBacklog(AssignUserStoryToBacklog other) : this() {
+      backlogName_ = other.backlogName_;
+      userStoryId_ = other.userStoryId_;
+      userId_ = other.userId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssignUserStoryToBacklog Clone() {
+      return new AssignUserStoryToBacklog(this);
+    }
+
+    /// <summary>Field number for the "BacklogName" field.</summary>
+    public const int BacklogNameFieldNumber = 1;
+    private string backlogName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BacklogName {
+      get { return backlogName_; }
+      set {
+        backlogName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "UserStoryId" field.</summary>
+    public const int UserStoryIdFieldNumber = 2;
+    private int userStoryId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int UserStoryId {
+      get { return userStoryId_; }
+      set {
+        userStoryId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "UserId" field.</summary>
+    public const int UserIdFieldNumber = 3;
+    private int userId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int UserId {
+      get { return userId_; }
+      set {
+        userId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AssignUserStoryToBacklog);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AssignUserStoryToBacklog other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BacklogName != other.BacklogName) return false;
+      if (UserStoryId != other.UserStoryId) return false;
+      if (UserId != other.UserId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (BacklogName.Length != 0) hash ^= BacklogName.GetHashCode();
+      if (UserStoryId != 0) hash ^= UserStoryId.GetHashCode();
+      if (UserId != 0) hash ^= UserId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (BacklogName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(BacklogName);
+      }
+      if (UserStoryId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserStoryId);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(UserId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BacklogName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(BacklogName);
+      }
+      if (UserStoryId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(UserStoryId);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(UserId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (BacklogName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BacklogName);
+      }
+      if (UserStoryId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserStoryId);
+      }
+      if (UserId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AssignUserStoryToBacklog other) {
+      if (other == null) {
+        return;
+      }
+      if (other.BacklogName.Length != 0) {
+        BacklogName = other.BacklogName;
+      }
+      if (other.UserStoryId != 0) {
+        UserStoryId = other.UserStoryId;
+      }
+      if (other.UserId != 0) {
+        UserId = other.UserId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            BacklogName = input.ReadString();
+            break;
+          }
+          case 16: {
+            UserStoryId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            UserId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            BacklogName = input.ReadString();
+            break;
+          }
+          case 16: {
+            UserStoryId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            UserId = input.ReadInt32();
+            break;
+          }
         }
       }
     }

@@ -75,8 +75,15 @@ message NewBacklogRequest {
 }
 
 
+
 message AllBacklogsRequest {
 
+}
+
+message AssignUserStoryToBacklog {
+  string BacklogName = 1;
+  int32 UserStoryId = 2;
+  int32 UserId = 3;
 }
 
 ////////////////////////////////////////////////////////////
@@ -95,4 +102,5 @@ service ScrumService {
   rpc getBacklog(BacklogRequest) returns (stream BacklogResponse);
   rpc createBacklog(NewBacklogRequest) returns (SuccessResponse);
   rpc getAllBacklogs(AllBacklogsRequest) returns (stream BacklogResponse);
+  rpc assignUserStory(AssignUserStoryToBacklog) returns (SuccessResponse);
 }

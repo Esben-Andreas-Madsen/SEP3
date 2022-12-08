@@ -71,6 +71,8 @@ namespace LoadDatabase {
     static readonly grpc::Marshaller<global::LoadDatabase.NewBacklogRequest> __Marshaller_dk_via_scrum_NewBacklogRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::LoadDatabase.NewBacklogRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::LoadDatabase.AllBacklogsRequest> __Marshaller_dk_via_scrum_AllBacklogsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::LoadDatabase.AllBacklogsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::LoadDatabase.AssignUserStoryToBacklog> __Marshaller_dk_via_scrum_AssignUserStoryToBacklog = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::LoadDatabase.AssignUserStoryToBacklog.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::LoadDatabase.UserRequest, global::LoadDatabase.UserResponse> __Method_getUser = new grpc::Method<global::LoadDatabase.UserRequest, global::LoadDatabase.UserResponse>(
@@ -143,6 +145,14 @@ namespace LoadDatabase {
         "getAllBacklogs",
         __Marshaller_dk_via_scrum_AllBacklogsRequest,
         __Marshaller_dk_via_scrum_BacklogResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::LoadDatabase.AssignUserStoryToBacklog, global::LoadDatabase.SuccessResponse> __Method_assignUserStory = new grpc::Method<global::LoadDatabase.AssignUserStoryToBacklog, global::LoadDatabase.SuccessResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "assignUserStory",
+        __Marshaller_dk_via_scrum_AssignUserStoryToBacklog,
+        __Marshaller_dk_via_scrum_SuccessResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -316,6 +326,26 @@ namespace LoadDatabase {
       public virtual grpc::AsyncServerStreamingCall<global::LoadDatabase.BacklogResponse> getAllBacklogs(global::LoadDatabase.AllBacklogsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_getAllBacklogs, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::LoadDatabase.SuccessResponse assignUserStory(global::LoadDatabase.AssignUserStoryToBacklog request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return assignUserStory(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::LoadDatabase.SuccessResponse assignUserStory(global::LoadDatabase.AssignUserStoryToBacklog request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_assignUserStory, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::LoadDatabase.SuccessResponse> assignUserStoryAsync(global::LoadDatabase.AssignUserStoryToBacklog request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return assignUserStoryAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::LoadDatabase.SuccessResponse> assignUserStoryAsync(global::LoadDatabase.AssignUserStoryToBacklog request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_assignUserStory, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

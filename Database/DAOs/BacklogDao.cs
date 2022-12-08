@@ -30,18 +30,9 @@ public class BacklogDao : IBacklogDao
         return await Task.FromResult(backlogs);
     }
 
-    public Task UpdateAsync(Backlog backlog)
+    public async Task<AssignUserStoryDto> AssignUserStory(AssignUserStoryDto dto)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<Backlog?> GetByNameAsync(string backlogName)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(string backlogName)
-    {
-        throw new NotImplementedException();
+        await context.AssignUserStory(dto);
+        return await Task.FromResult(dto);
     }
 }

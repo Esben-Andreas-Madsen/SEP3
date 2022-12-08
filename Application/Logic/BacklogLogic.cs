@@ -31,4 +31,10 @@ public class BacklogLogic: IBacklogLogic
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("Name cannot be empty.");
     }
+
+    public Task<AssignUserStoryDto> AssignUserStory(AssignUserStoryDto dto)
+    {
+        return backlogDao.AssignUserStory(dto);
+    }
+
 }

@@ -7,4 +7,5 @@ public interface IBacklogLogic
 {
    Task<BacklogCreationDto> CreateAsync(BacklogCreationDto dto);
    public Task<IEnumerable<Backlog>> GetAsync();
+   Task<AssignUserStoryDto> AssignUserStory(AssignUserStoryDto dto);
 }
