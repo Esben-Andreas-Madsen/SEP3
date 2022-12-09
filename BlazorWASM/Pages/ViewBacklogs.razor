@@ -4,7 +4,6 @@
 @attribute [Authorize]
 
 @inject IBackLogService backLogService
-@inject IUserStoryService userStoryService
 
 <h3>Backlogs</h3>
 
@@ -20,10 +19,10 @@ else if (!backlogs.Any())
 }
 else
 {
-    @foreach (Backlog backlog in uniqueBacklogs)
+    @foreach (Backlog uniqueBacklog in uniqueBacklogs)
     {
-        <div style="margin: 20px">
-            <h3>@backlog.BacklogName</h3>
+        <div style="margin: 20px; outline: 2px solid blueviolet; padding: 10px">
+            <h3>@uniqueBacklog.BacklogName</h3>
             <table class="table">
                 <thead>
                 <th>UserStoryId</th>
@@ -32,16 +31,6 @@ else
                 <th>Description</th>
                 </thead>
                 <tbody>
-                @foreach (UserStory userStory in userStories)
-                {
-                    if (userStory.UserStoryId.Equals(backlog.UserStoryId))
-                    {
-                        <td>@userStory.UserStoryId</td>
-                        <td>@userStory.UserId</td>
-                        <td>@userStory.Title</td>
-                        <td>@userStory.Description</td>
-                    }
-                }
                 </tbody>
             </table>
         </div>
@@ -50,40 +39,26 @@ else
         <br/>
     }
 }
-@if (!string.IsNullOrEmpty(msg))
-{
-    <label style="color: red">@msg</label>
-}
 
 @code {
     private IEnumerable<Backlog>? backlogs;
-    private IEnumerable<UserStory>? userStories;
-    private List<Backlog>? uniqueBacklogs = new();
-
-    private string msg = "";
-    private User? user;
+    private List<Backlog>? uniqueBacklogs;
 
     protected override async Task OnInitializedAsync()
     {
-        msg = "";
         try
         {
             backlogs = await backLogService.GetAsync();
-            userStories = await userStoryService.GetUserStories();
 
+            uniqueBacklogs = backlogs
+                .GroupBy(p => new { p.BacklogName })
+                .Select(g => g.First())
+                .ToList();
 
-            foreach (Backlog backlog in backlogs)
-            {
-                if (!uniqueBacklogs.Contains(backlog))
-                {
-                    uniqueBacklogs.Add(backlog);
-                }
-            }
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
-            msg = e.Message;
         }
     }
 

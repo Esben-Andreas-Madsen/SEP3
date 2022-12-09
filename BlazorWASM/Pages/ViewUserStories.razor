@@ -6,7 +6,11 @@
 
 <h3 style="text-align: center">Overview of all UserStories</h3>
 
-@if (!userStories.Any())
+
+@if (userStories == null)
+{
+}
+else if (!userStories.Any())
 {
     <p>No UserStories to display</p>
 }
@@ -48,4 +52,5 @@ else
             Console.WriteLine(e);
         }
     }
+
 }
