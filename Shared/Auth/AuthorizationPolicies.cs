@@ -19,7 +19,7 @@ public class AuthorizationPolicies
         services.AddAuthorizationCore(options =>
         {
             options.AddPolicy("MustBeScrumMember", a =>
-                a.RequireAuthenticatedUser().RequireClaim("Role", "Scrum Member"));
+                a.RequireAuthenticatedUser().RequireClaim("Role", "Scrum Member",  "Scrum Master"));
         });
     }
 }
