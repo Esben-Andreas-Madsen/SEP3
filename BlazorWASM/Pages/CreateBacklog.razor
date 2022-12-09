@@ -1,10 +1,8 @@
 ﻿@page "/CreateBacklog"
 @using HttpClients.ClientInterfaces
 @using UIComponents
-@using global::Shared.Models
 @using global::Shared.DTOs
 @using System.Security.Claims
-@inject IUserService userService
 @inject IBackLogService backlobService
 @inject NavigationManager navMgr
 @attribute [Authorize("MustBeProductOwner")]
@@ -33,8 +31,6 @@
 </Modal>
 
 @code {
-    private int selectedId;
-    private User? selectedUser;
     private string backlogName = "";
     private string msg = "";
     private bool showModal;
@@ -71,7 +67,7 @@
     private void Proceed()
     {
         showModal = false;
-        navMgr.NavigateTo("/Backlog");
+        navMgr.NavigateTo("/CreateBacklog");
     }
 
 }

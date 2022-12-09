@@ -2,8 +2,8 @@
 
 public class BacklogCreationDto
 {
-    public int UserId { get; set; }
-    public string Title { get; set; }
+    public int UserId { get; init; }
+    public string Title { get; init; }
 
 
     public BacklogCreationDto(int userId, string title)

@@ -2,9 +2,9 @@
 
 public class UserStoryCreationDto
 {
-    public int UserId { get; set; }
-    public string Title { get; set; }
-    public string Description { get; set; }
+    public int UserId { get; init; }
+    public string Title { get; init; }
+    public string Description { get; init; }
 
     public UserStoryCreationDto(int userId, string title, string description)
     {

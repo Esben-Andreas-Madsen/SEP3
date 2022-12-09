@@ -4,9 +4,9 @@ namespace Database;
 
 public class DataContainer
 {
-    public List<User> Users { get; set; }
-    public List<UserStory> UserStories { get; set; }
-    public List<Backlog> Backlogs { get; set; }
+    public List<User> Users { get; }
+    public List<UserStory> UserStories { get; }
+    public List<Backlog> Backlogs { get; }
 
     public DataContainer()
     {

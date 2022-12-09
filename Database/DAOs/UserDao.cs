@@ -8,12 +8,10 @@ namespace Database.DAOs;
 public class UserDao : IUserDao
 
 {
-    private readonly DataContainer container;
     private DataContext context;
 
-    public UserDao(DataContainer container, DataContext context)
+    public UserDao(DataContext context)
     {
-        this.container = container;
         this.context = context;
     }
 

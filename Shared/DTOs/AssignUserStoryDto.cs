@@ -2,9 +2,9 @@
 
 public class AssignUserStoryDto
 {
-    public string BacklogName { get; set; }
-    public int UserStoryId { get; set; }
-    public int UserId { get; set; }
+    public string BacklogName { get; init; }
+    public int UserStoryId { get; init; }
+    public int UserId { get; init; }
 
     public AssignUserStoryDto(string backlogName, int userStoryId, int userId)
     {

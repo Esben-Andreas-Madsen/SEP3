@@ -6,13 +6,10 @@ namespace Database.DAOs;
 
 public class BacklogDao : IBacklogDao
 {
-
-    private readonly DataContainer container;
     private DataContext context;
 
-    public BacklogDao(DataContainer container, DataContext context)
+    public BacklogDao(DataContext context)
     {
-        this.container = container;
         this.context = context;
     }
 

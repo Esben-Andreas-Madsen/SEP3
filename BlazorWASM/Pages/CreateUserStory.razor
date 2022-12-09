@@ -10,10 +10,6 @@
 
         <label>Title:</label>
         <input type="text" @bind="title" @bind:event="oninput"/>
-        @if (!string.IsNullOrEmpty(resultMsg))
-        {
-            <label style="color: @color">@resultMsg</label>
-        }
         <label>Description:</label>
         <input type="text" @bind="description" @bind:event="oninput"/>
         @if (!string.IsNullOrEmpty(resultMsg))

@@ -6,12 +6,10 @@ namespace Database.DAOs;
 
 public class UserStoryDao : IUserStoryDao
 {
-    private readonly DataContainer container;
     private DataContext context;
 
-    public UserStoryDao(DataContainer container, DataContext context)
+    public UserStoryDao(DataContext context)
     {
-        this.container = container;
         this.context = context;
     }
 

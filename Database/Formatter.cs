@@ -19,9 +19,4 @@ public class Formatter : FormatterInterface
     {
         return new Backlog(response.BacklogName, response.UserStoryId, response.UserId);
     }
-
-    /*public Backlog responseToBacklog(BacklogResponse response)
-    {
-        return new Backlog(response.BacklogName,response.UserStoryId,response.UserId);
-    }*/
 }

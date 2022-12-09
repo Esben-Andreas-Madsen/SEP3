@@ -2,9 +2,9 @@
 
 public class Backlog
 {
-   public string BacklogName { get; set; }
-   public int UserStoryId { get; set; }
-   public int UserId { get; set; }
+   public string BacklogName { get; init; }
+   public int UserStoryId { get; init; }
+   public int UserId { get; init; }
 
    public Backlog(string backlogName, int userStoryId, int userId)
    {
