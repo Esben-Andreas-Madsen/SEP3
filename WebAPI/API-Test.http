@@ -1,0 +1,40 @@
+﻿//User POST test
+
+POST https://localhost:7038/User
+Content-Type: application/json
+
+{
+  "UserName" : "userName1",
+  "Password" : "password",
+  "Role" : "role",
+  "FirstName" : "firstName",
+  "LastName" : "lastName"
+}
+
+###
+
+//User GET by UserName Test
+GET https://localhost:7038/User/userName
+
+###
+
+//JWT Auth login test
+POST https://localhost:7038/Auth/login
+Content-Type: application/json
+
+{
+  "UserName" : "userName",
+  "Password" : "password"
+}
+
+###
+
+//AssignBacklog test
+POST https://localhost:7038/Backlog/AssignBacklog
+Content-Type: application/json
+
+{
+  "backlogName": "Backlog1",
+  "userStoryId": 1,
+  "userId": 13
+}
