@@ -38,3 +38,19 @@ Content-Type: application/json
   "userStoryId": 1,
   "userId": 13
 }
+
+
+###
+
+//CreateUserStory test
+POST https://localhost:7038/UserStory
+Content-Type: application/json
+
+{
+  "userId": 12,
+  "title": "string",
+  "description": "string"
+}
+
+
+
