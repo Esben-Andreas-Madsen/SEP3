@@ -4,7 +4,7 @@ POST https://localhost:7038/User
 Content-Type: application/json
 
 {
-  "UserName" : "userName1",
+  "UserName" : "userName3",
   "Password" : "password",
   "Role" : "role",
   "FirstName" : "firstName",

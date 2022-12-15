@@ -36,8 +36,8 @@ public class BacklogController: ControllerBase
     {
         try
         {
-            var todos = await backlogLogic.GetAsync();
-            return Ok(todos);
+            var backlogs = await backlogLogic.GetAsync();
+            return Ok(backlogs);
         }
         catch (Exception e)
         {

@@ -45,12 +45,15 @@ public class DataContext
     
     public async Task GetAllUsers()
     {
-        AsyncServerStreamingCall<UserResponse> streamingCall = client.getAllUsers(new AllUsersRequest());
+        AsyncServerStreamingCall<UserResponse> streamingCall = 
+            client.getAllUsers(new AllUsersRequest());
         try
         {
-            await foreach (UserResponse userResponse in streamingCall.ResponseStream.ReadAllAsync())
+            await foreach (UserResponse userResponse in 
+                           streamingCall.ResponseStream.ReadAllAsync())
             {
-                container.Users.Add(formatter.responseToUser(userResponse));
+                container.Users
+                    .Add(formatter.responseToUser(userResponse));
             }
         }
         catch (RpcException ex)
@@ -63,12 +66,16 @@ public class DataContext
     
     public async Task GetAllUserStories()
     {
-        AsyncServerStreamingCall<UserStoryResponse> streamingCall = client.getAllUserStories(new AllUserStoriesRequest());
+        AsyncServerStreamingCall<UserStoryResponse> streamingCall = 
+            client.getAllUserStories(new AllUserStoriesRequest());
+        
         try
         {
-            await foreach (UserStoryResponse userStoryResponse in streamingCall.ResponseStream.ReadAllAsync())
+            await foreach (UserStoryResponse userStoryResponse in 
+                           streamingCall.ResponseStream.ReadAllAsync())
             {
-                container.UserStories.Add(formatter.responseToUserStory(userStoryResponse));
+                container.UserStories
+                    .Add(formatter.responseToUserStory(userStoryResponse));
             }
         }
         catch (RpcException ex)
